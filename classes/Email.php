@@ -56,6 +56,7 @@ class Email
 
     public function enviarInstrucciones() {
         // create a new object
+        $mail = new PHPMailer();
         $mail->isSMTP();
         $mail->Host = $_ENV['EMAIL_HOST'];
         $mail->SMTPAuth = true;
