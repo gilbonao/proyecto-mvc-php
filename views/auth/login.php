@@ -1,4 +1,4 @@
-<h1 class="nombre-pagina">Inicio de sesión</h1>
+<h1 class="nombre-pagina">Inicio de sesión - Actualizado</h1>
 <p class="descripcion-pagina">Inicia sesión con tus datos</p>
 
 <?php 
