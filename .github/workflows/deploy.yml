@@ -1,4 +1,4 @@
-name: 'Sync on DOM Cloud'
+name: 'GitHub Action AGilbon'
 
 on:
   workflow_dispatch: {}
@@ -11,10 +11,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Invoke deployment hook'
-        uses: distributhor/workflow-webhook@v2
-        env:
-          webhook_url: 'https://my.domcloud.co/api/githubdeploy'
-          webhook_secret: '${{ secrets.WEBHOOK_SECRET }}'
-          webhook_auth: '${{ secrets.WEBHOOK_AUTH }}'
-          data: '{"commands":["git pull"]}'
+      - name: 'Mostrar mensaje'
+        run: echo "Hola a todos"
